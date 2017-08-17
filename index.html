@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joy Club</title>
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300i,400,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
+        <link rel="stylesheet" href="assets/css/estilo.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+        <link rel="stylesheet" href="assets/css/Important-Highlighted-Event.css">
+        <link rel="stylesheet" href="assets/css/card.css">       
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    </head>
+    <body class="corpo">
+        <div class="container-fluid main-header-text">
+            <div class="top-header-container">
+            </div>
+            <nav class="navbar navbar-default nav-main-wrapper">
+                <div class="container">
+                    <div class="navbar-header"><a class="navbar-brand visible-xs-block navbar-link" href="#">MENU </a>
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active" role="presentation"><a href="#" data-bs-hover-animate="pulse">Início</a></li>
+                        <li role="presentation"><a href="#" data-bs-hover-animate="pulse">Galeria</a></li>
+                        <li role="presentation"><a href="#" data-bs-hover-animate="pulse">Agenda</a></li>
+                        <li role="presentation"><a href="#" data-bs-hover-animate="pulse">Contato</a></li>
+                        <li role="presentation"><a href="#" data-bs-hover-animate="pulse">Sobre</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container conteudo">
+        <div class="carousel slide" data-ride="carousel" id="carousel-1">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active"><img src="http://placeholdit.imgix.net/~text?txtsize=42&amp;txt=Carousel+Image&amp;w=1400&amp;h=600" alt="Slide Image"></div>
+                <div class="item"><img src="http://placeholdit.imgix.net/~text?txtsize=42&amp;txt=Carousel+Image&amp;w=1400&amp;h=600" alt="Slide Image"></div>
+                <div class="item"><img src="http://placeholdit.imgix.net/~text?txtsize=42&amp;txt=Carousel+Image&amp;w=1400&amp;h=600" alt="Slide Image"></div>
+            </div>
+            <div><a class="left carousel-control" href="#carousel-1" role="button" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel-1" role="button"
+            data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i><span class="sr-only">Next</span></a></div>
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-1" data-slide-to="1"></li>
+                <li data-target="#carousel-1" data-slide-to="2"></li>
+            </ol>
+        </div>
+        <div class="page-header">
+            <h1 data-aos="fade-up" data-aos-once="true">PRÓXIMAS FESTAS</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="card-container manual-flip">
+                    <div class="card">
+                        <div id="front_1" class="front">
+                            <div onclick="rotateCard(this, 1)" class="cover">
+                                <img src="assets/img/festa1.png"/>
+                            </div>
+                        </div>
+                        <div id="back_1" class="back esconde">
+                            <div class="content">
+                                <div class="main">
+                                    <h3 class="text-center">Summer Night</h3>
+                                    <hr>
+                                    <p class="text-center data"><strong><i class="fa fa-calendar"></i></strong> 27/08/2017 <br><i class="fa fa-clock-o"></i></strong> 18:00</p>
+                                    <hr>
+                                    <p clas="descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. </p>
+                                </div>
+                            </div>
+                                <button class="btn btn-simple voltar" rel="tooltip" title="Voltar" onclick="rotateCard(this, 1)">
+                                    <i class="fa fa-long-arrow-left"></i> 
+                                </button>
+                            <div class="footer">
+                            <a href="" class="btn btn-simple"><i class="fa fa-plus"></i> Ver Mais</a>
+<!--                                 <div class="social-links text-center">
+                                    <a href="http://deepak646.blogspot.in/" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                    <a href="http://deepak646.blogspot.in/" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                    <a href="http://deepak646.blogspot.in/" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card-container manual-flip">
+                    <div class="card">
+                        <div onclick="rotateCard(this, 2)" class="front" id="front_2">
+                            <div class="cover">
+                                <img src="assets/img/festa1.png"/>
+                            </div>
+                        </div>
+                        <div class="back esconde" id="back_2">
+                            <div class="content">
+                                <div class="main">
+                                    <h4 class="text-center">Job Description</h4>
+                                    <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" rel="tooltip" title="Voltar" onclick="rotateCard(this, 2)">
+                                <i class="fa fa-long-arrow-left"></i> 
+                                </button>
+                                <div class="social-links text-center">
+                                    <a href="http://deepak646.blogspot.in/" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                    <a href="http://deepak646.blogspot.in/" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                    <a href="http://deepak646.blogspot.in/" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card-container manual-flip">
+                    <div class="card">
+                        <div id="front_3" class="front">
+                            <div onclick="rotateCard(this, 3)" class="cover">
+                                <img src="assets/img/festa1.png"/>
+                            </div>
+                        </div>
+                        <div id="back_3" class="back esconde">
+                            <div class="content">
+                                <div class="main">
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" rel="tooltip" title="Voltar" onclick="rotateCard(this, 3)">
+                                <i class="fa fa-long-arrow-left"></i> 
+                                </button>
+                                <div class="social-links text-center">
+                                    <a href="http://deepak646.blogspot.in/" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                    <a href="http://deepak646.blogspot.in/" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                    <a href="http://deepak646.blogspot.in/" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/bs-animation.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

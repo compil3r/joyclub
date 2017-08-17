@@ -1,0 +1,242 @@
+h1 {
+  color:#FFF;
+  font-family:Lato, sans-serif;
+  text-transform:uppercase;
+  margin:0;
+  margin-bottom:25px;
+  font-size:56px;
+}
+
+p {
+  color:#FFF;
+  font-family:Lato, sans-serif;
+  font-weight:100;
+  max-width:1024px;
+  margin:0 auto;
+}
+
+@media (max-width:767px) {
+  h1 {
+    font-size:30px;
+  }
+}
+
+@media (max-width:767px) {
+  p {
+    font-size:14px;
+    margin:0px 25px;
+  }
+}
+
+.header-cell .fa.fa-truck {
+  margin-right:15px;
+}
+
+.top-header-container {
+  display:table;
+  width:100%;
+  height:600px;
+  /*background-color:rgba(215,44,44,0.4);*/
+  /*background:-webkit-linear-gradient(left, red , yellow);*/
+  background-image:-webkit-gradient(
+  linear, left top, left bottom, from(rgba(215,44,44,0.5)),
+  to(rgba(215,44,44,1)), color-stop(.5, rgba(215, 44, 44, 0.5)));
+}
+
+.header-cell {
+  display:table-cell;
+  width:100%;
+  height:100%;
+  vertical-align:middle;
+}
+
+.container-fluid.main-header-text {
+  padding:0;
+  margin:0;
+  min-height:600px;
+  display:block;
+  position:relative;
+  background-image:url('https://cdn-imgix.headout.com/tour/3453/TOUR-IMAGE/99f52401-8c9e-4820-8f90-6a5fcca7dccc-2327-las-vegas-vip-club-crawl-4-stop-hop-01.jpg');
+  background-size:cover;
+  background-position:center center;
+  text-align:center;
+}
+
+.nav-main-wrapper {
+  text-align:center;
+  box-shadow:none;
+  border:none;
+  border-radius:0;
+  margin-bottom:0;
+  background:rgba(255,44,44,0);
+  display:block;
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+}
+
+.nav-main-wrapper .navbar-brand {
+  color:#FFF;
+  box-shadow:none;
+  text-transform:uppercase;
+  font-size:16px;
+}
+
+.nav-main-wrapper .navbar-brand:hover {
+  color:#FFF;
+  box-shadow:none;
+  opacity:0.8;
+}
+
+.nav-main-wrapper ul {
+  float:none;
+}
+
+.nav-main-wrapper li {
+  float:none;
+  display:inline-block;
+}
+
+.nav-main-wrapper .navbar-nav > li > a {
+  text-shadow:none;
+  background:none;
+  text-transform:uppercase;
+  font-size:20px;
+  color:#fff;
+  font-family:'Montserrat', 'Open Sans', sans-serif;
+  /*font-weight:100;*/
+  letter-spacing:1.5px;
+  font-weight:400;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover, .nav-main-wrapper .navbar-nav > .active > a, .nav-main-wrapper .navbar-nav > .open > a, .nav-main-wrapper .navbar-nav > .open > a:hover, .nav-main-wrapper .navbar-nav > .active > a:hover {
+  color:#fff;
+  background-color:transparent;
+  background-image:none;
+  box-shadow:none;
+  font-weight:900;
+}
+
+.nav-main-wrapper .navbar-nav > .active > a:after, .nav-main-wrapper .navbar-nav > .open > a:after {
+  opacity:1;
+  bottom:10px;
+}
+
+.nav-main-wrapper li a:hover, .nav-main-wrapper li a:active, .nav-main-wrapper li.active, .nav-main-wrapper li a:focus {
+  background-color:transparent;
+  background-image:none;
+  -webkit-transition:all 320ms ease;
+  -moz-transition:all 320ms ease;
+  -ms-transition:all 320ms ease;
+  -o-transition:all 320ms ease;
+  transition:all 320ms ease;
+}
+
+.nav-main-wrapper li a:after {
+  content:'';
+  position:absolute;
+  display:block;
+  left:15px;
+  right:15px;
+  bottom:0px;
+  height:2px;
+  background:rgba(289, 45, 45, 1);
+  opacity:0;
+}
+
+.nav-main-wrapper .navbar-toggle {
+  border:none;
+  color:#FFF;
+}
+
+.nav-main-wrapper .navbar-toggle .icon-bar {
+  opacity:1;
+  background-color:#FFF;
+}
+
+.nav-main-wrapper .navbar-toggle:hover .icon-bar {
+  opacity:0.8;
+}
+
+.nav-main-wrapper .navbar-toggle:focus, .nav-main-wrapper .navbar-toggle:hover {
+  background-color:transparent;
+}
+
+@media (max-width:767px) {
+  .nav-main-wrapper li a:after {
+    opacity:0;
+    display:none;
+  }
+}
+
+@media (max-width:767px) {
+  .nav-main-wrapper li {
+    float:none;
+    display:block;
+    text-align:left;
+  }
+}
+
+.corpo {
+  background-color:rgba(215, 44, 44, 1);
+}
+
+.container.conteudo {
+  background-color:white;
+  margin-top:20px;
+}
+
+.conteudo .page-header > h1 {
+  color:red;
+  text-align:center;
+  font-family:'Montserrat';
+  font-weight:700;
+}
+
+.conteudo .page-header {
+  border-bottom:none;
+}
+
+.carousel {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.carousel-indicators {
+  left: 32%;
+  top: 5%;
+  list-style: inherit;
+}
+
+.carousel-indicators > li {
+  display: block;
+  border-radius: 0;
+  margin-bottom: 6px;
+}
+
+.carousel-indicators > li.active {
+  margin-bottom: 5px;
+}
+
+.carousel-control {
+  width: 7%;
+  background-color: rgba(215, 44, 44, 1);
+  top: 80%;
+  left: inherit;
+  background-image: none;
+}
+
+.carousel-control.left {
+  right: 7%;
+  border-radius: 40px 0px 0px 0px;
+  background-image: none;
+}
+
+.carousel-control.right {
+  background-image: none;
+}
+
+.esconde {
+  display: none;
+}
