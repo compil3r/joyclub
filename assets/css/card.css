@@ -40,12 +40,13 @@
 }
 .card p {
     color: #999999;
-
+    text-align: justify;
 }
 
 .card .data {
     font-size: 1.2em;
     font-weight: bold;
+    text-align: center
 }
 
 .card .descrição {
@@ -62,7 +63,7 @@
     top: 0;
     left: 0;
     background-color: #FFF;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);
+    /*box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);*/
 }
 /* front pane, placed above back */
 .front {
@@ -89,10 +90,9 @@
 .card-container, .front, .back {
     width: 100%;
     height: auto;
-    border-radius: 4px;
-    -webkit-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.16);
+/*    -webkit-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.16);
 -moz-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.16);
-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.3);
+box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.3);*/
 }
 .card .cover{
     height: 100%;
@@ -144,8 +144,12 @@ box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.3);
     position: absolute;
     bottom: 0px;
     width: 100%;
-    padding-top: 8px;
-    border-top: 1px solid rgba(215, 44, 44, 0.4);
+    padding-top: 2px;
+    background-color: #eee;
+}
+
+.card .back {
+    border: 1px solid #eee;
 }
 .card .footer .social-links{
     font-size: 18px;
@@ -266,13 +270,13 @@ box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.3);
 .back h3 {
     font-family:'Montserrat', 'Open Sans', sans-serif;
     font-weight: 700;
-    color: red;
+    color: rgba(207, 83, 81, 1)
     text-transform: uppercase;     
-    
+    margin-top: 0px;
 }
 
 .cover:hover {
-    box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.8);
+    border: 1px solid rgba(207, 83, 81, 1);
 }
 /*       Fix bug for IE      */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {

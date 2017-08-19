@@ -39,8 +39,8 @@ p {
   /*background-color:rgba(215,44,44,0.4);*/
   /*background:-webkit-linear-gradient(left, red , yellow);*/
   background-image:-webkit-gradient(
-  linear, left top, left bottom, from(rgba(215,44,44,0.5)),
-  to(rgba(215,44,44,1)), color-stop(.5, rgba(215, 44, 44, 0.5)));
+    linear, left top, left bottom, from(rgba(215,44,44,0.5)),
+    to(rgba(207,83,81,1)), color-stop(.5, rgba(215, 44, 44, 0.5)));
 }
 
 .header-cell {
@@ -74,6 +74,14 @@ p {
   left:0;
   right:0;
   bottom:0;
+}
+.navbar-fixed-top {
+  position: fixed;
+  bottom: inherit;
+}
+
+.navbar-fixed-top > .container {
+  background-color: rgba(207, 83, 81, 1);
 }
 
 .nav-main-wrapper .navbar-brand {
@@ -179,7 +187,10 @@ p {
 }
 
 .corpo {
-  background-color:rgba(215, 44, 44, 1);
+   /*background-image:-webkit-gradient(
+    linear, left top, left bottom, from(rgba(207, 83, 81, 1)),
+    to(rgba(207,83,81,0)), color-stop(.5, rgba(207, 83, 81, 1)));*/
+    background-color: rgba(207, 83, 81, 1);
 }
 
 .container.conteudo {
@@ -188,7 +199,7 @@ p {
 }
 
 .conteudo .page-header > h1 {
-  color:red;
+  color:rgba(207, 83, 81, 1);
   text-align:center;
   font-family:'Montserrat';
   font-weight:700;
@@ -198,45 +209,240 @@ p {
   border-bottom:none;
 }
 
-.carousel {
+.carousel-inicial {
   margin-left: -15px;
   margin-right: -15px;
 }
 
-.carousel-indicators {
+.carousel-inicial .carousel-indicators {
   left: 32%;
   top: 5%;
   list-style: inherit;
 }
 
-.carousel-indicators > li {
+.carousel-inicial  .carousel-indicators > li {
   display: block;
   border-radius: 0;
   margin-bottom: 6px;
 }
 
-.carousel-indicators > li.active {
+.carousel-inicial .carousel-indicators > li.active {
   margin-bottom: 5px;
 }
 
-.carousel-control {
+.carousel-inicial .carousel-control {
   width: 7%;
-  background-color: rgba(215, 44, 44, 1);
+  background-color: rgba(207, 83, 81, 1);
   top: 80%;
   left: inherit;
   background-image: none;
 }
 
-.carousel-control.left {
+.carousel-inicial .carousel-control.left {
   right: 7%;
   border-radius: 40px 0px 0px 0px;
   background-image: none;
 }
 
-.carousel-control.right {
+.carousel-inicial .carousel-control.right {
   background-image: none;
 }
 
 .esconde {
   display: none;
+}
+
+/* Removes the default 20px margin and creates some padding space for the indicators and controls */
+.carousel-galeria {
+  margin-bottom: 0;
+  padding: 0px 0px 30px 0px;
+}
+/* Reposition the controls slightly */
+.carousel-galeria .carousel-control.left {
+  /*  left: -12px;*/
+}
+.carousel-galeria .carousel-control.right {
+  /*  right: -12px;*/
+}
+/* Changes the position of the indicators */
+.carousel-galeria .carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+
+.carousel-galeria .thumbnail {
+  box-shadow: none;
+  border: none;
+}
+.carousel-galeria li {
+  border-radius: 0px;
+}
+
+.carousel-galeria span {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  margin-left: -125px;
+  width: 250px;
+  height: 250px;
+  background-color: rgba(25, 25, 25, 0.7);
+  -o-transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+  -ms-transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+  -moz-transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+  -webkit-transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+  transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column;
+}
+.carousel-galeria span > p {
+  text-align: center;
+  color: #fff;
+  vertical-align: middle;
+  margin-top: -10px;
+}
+.carousel-galeria span > h3 {
+  text-align: center;
+  color: #fff;
+  vertical-align: middle;
+   font-family:'Montserrat';
+   font-weight: 900;
+}
+.carousel-galeria .thumbnail:hover span {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+/* Changes the colour of the indicators */
+.carousel-galeria .carousel-indicators li {
+  background: #c0c0c0;
+}
+.carousel-galeria .carousel-indicators .active {
+  background: #333333;
+}
+.contato {
+  margin-bottom: 60px;
+}
+
+.form-control {
+  border-radius: 0px;
+  height: 41px;
+}
+
+.form-control:focus {
+  border-color: rgba(207, 83, 81, 1);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(207, 83, 81, 0.6)
+}
+
+.btn{
+  border-radius: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.btn-default {
+  background-image: none;
+
+}
+
+.contato .btn {
+  font-family: 'Montserrat';
+   text-transform: uppercase;
+  font-weight: 900;
+}
+.btn-default:hover {
+  background-color: rgba(207, 83, 81, 0.8);
+  color: white;
+  border-color: rgba(207, 83, 81, 0.8);
+
+}
+
+.btn-social {
+  color: white;
+  border: 1px solid white;
+  padding: 10px 15px;
+   -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.btn-social:hover {
+  background-color: white;
+  color: rgba(207, 83, 81, 0.8);
+}
+
+
+.sociais {
+  margin-bottom: 10px;
+}
+footer {
+  text-align: right;
+  padding: 20px 0px;
+  margin-bottom: 10px;
+}
+
+footer p {
+  max-width: none;
+}
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(255, 255, 255, 0.9) url(../img/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 15px;
+    bottom: 30px;
+  }
 }
